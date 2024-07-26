@@ -1,0 +1,218 @@
+
+body{
+    margin: 0;
+    border: 0;
+    background-color: whitesmoke;
+    height: 100vh;
+}
+
+/*-----------------------------------------Main Section starts-: ----------------------*/
+
+main{
+    padding: 30px 520px;
+    background: url('background\ new.jpg');
+    background-size: cover;
+    background-position: center;
+    background-size: auto;
+}
+
+/*Now for the card details manage-: */
+.card{
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background-color: rgb(255, 255, 255, -2);
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    padding: 50px 50px;
+    color: rgb(250, 246, 246);
+    box-shadow: 0 0 15px black;
+}
+
+/*Now for the search box management-: */
+.search-details{
+    position: relative;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Search icon manage-: */
+.search-details i{
+    position: absolute;
+    left: 40px;
+    font-size: 20px;
+    align-items: center;
+}
+
+/*Now for customize the search box input-: */
+.search-details input{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255, .2);
+    outline: none;
+    border-radius: 10px;
+    font-size: 21px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500px;
+    padding: 0 48px 0 42px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgb(0,0,0);
+    align-items: center;
+}
+
+/*Search details button i management-: */
+.search-details button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Search bar management according to the card-:*/
+.card .search-details input{
+    margin-left: 0.9px;
+}
+
+/*Seach button hover effect-: */
+.search-details button:hover{
+    color: black;
+    text-shadow: 0 0 10px black;
+}
+
+/*Search box manupulation-: (At when user starts typing, disappears the placeholder-: ) */
+.search-details input::placeholder{
+    color: white;
+    text-transform: capitalize;
+}   
+
+/*Get out the margins from the input bar-: */
+.search-details input{
+    left: 20px;
+    outline: none;
+    border: none;
+}
+
+/*Now for the button management-: */
+.search-details button{
+    position: absolute;
+    right: 20px;
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 35px;
+    border: none;
+
+}
+
+/*Now for the image of the weather box-: */
+.weatherBox img{
+    width: 60%;
+    margin: 0 auto;
+    margin-left: 80px;
+    margin-top: 15px;
+}
+
+/*Now for customize the tempreture defines-: */
+.weatherBox .tempreture{
+    position: relative;
+    font-size: 64px;
+    margin-top: 10px;
+    font-weight: 700px;
+    line-height: 1;
+    font-family: monospace;
+    margin: 20px 0 6px -30px;
+    text-align: center;
+}
+
+/*Now for sign board of the tempreture-: */
+.weatherBox .tempreture span{
+    position: absolute; 
+    margin-left: 4px;
+    font-size: 30px;
+}
+
+/*Now for the weather description management-: */
+.weatherBox .description{
+    font-size: 22px;
+    font-weight: 700px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/*Now for weather-details customization-: */
+.weather-details{
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 0 10px;
+    gap: 40%;
+    justify-content: space-between;
+}
+
+/*Now commuting both of the icons at a time-: */
+.weather-details .humidity,
+.weather-details .wind{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-left: 30px;
+}
+
+/*A small management-: */
+.weather-details .wind{
+    margin-right: 60px;
+}
+
+/*Now for the icon of the Humid & Wind-: */
+.weather-details i{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+/*Now for the section of tempreture about in span-: */
+.weather-details span{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/*Now for the paragraph of the details block-: */
+.weather-details p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*Error functioning-: */
+.not-found{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 110px;
+}
+
+.not-found img{
+    width: 25%;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+.not-found p{
+    font-size: 22px;
+    justify-content: center;
+    margin-left: 60px;
+    font-weight: 600;
+}

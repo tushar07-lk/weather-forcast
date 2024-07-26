@@ -1,0 +1,73 @@
+
+<!--Weather Forcast application: -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forcast WebApp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/b857e9cfc7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Now for the main webpage manage-: -->
+    <main>
+        <!--Total weather card making-: -->
+        <div class="card">
+            <!--Search box and details button-: -->
+            <div class="search-details">
+                <i class="fa-solid fa-location-dot" id="bitton"></i>
+                <input type="text" placeholder="Enter your location">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <!--weather details customize-: -->
+            <div class="weatherBox">
+                <div class="box">
+                    <div class="infoWeather">
+                        <div class="weather">
+                            <!--Image & desc. consideration-: -->
+                            <img src="404.png" alt="image">
+                            <p class="tempreture">Enter location!<span>°C</span></p>
+                            <p class="description">N/A</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---Now for the other weather details-: -->
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-solid fa-water"></i>
+                    <!--Now for the text about of this humidity-: -->
+                    <div class="text">
+                        <div class="info-humidity">
+                            <span>0%</span>
+                        </div>
+                        <!--About weather in text-format to informs-: -->
+                        <p class="about-des">Humidity</p>
+                    </div>
+                    <!--End of the 1st section: -->
+                </div>
+
+              <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <!--Now for the text about of this humidity-: -->
+                    <div class="text">
+                        <div class="info-wind">
+                            <span>0km/h</span>
+                        </div>
+                        <!--About weather in text-format to informs-: -->
+                        <p class="about-des">Wind</p>
+                    </div>
+              </div>
+
+            </div>
+        </div> <!--End of the card / weather section-: -->
+
+        
+    </main>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
